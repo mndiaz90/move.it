@@ -1,0 +1,18 @@
+.container{
+  height: 100vh; 
+  margin: 0 auto;
+  max-width: 792px;
+  padding: 2.5rem 2rem;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.leftContainer{
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 6.5rem;
+  gap: 1rem; 
+}
+

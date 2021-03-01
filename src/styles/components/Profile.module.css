@@ -1,0 +1,27 @@
+.containerProfile{
+    display: flex;
+    align-items: center;
+}
+
+.imgProfile{
+    height: 5rem;
+    width: 5rem;
+
+    border-radius: 50%;
+}
+
+.containerProfile > div{
+    margin: 0.5rem 0.5rem;
+}
+
+.containerProfile > div > span{
+    margin-bottom: 5px;
+}
+
+.containerProfile > div > p{
+    margin: 5px 0px 0px;
+}
+
+.imgLevel{
+    margin-right: 5px;
+}
