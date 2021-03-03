@@ -18,6 +18,10 @@ interface ChallengeContextData {
     newChallenge: ChallengeType;
     resetChallenge: () => void;
     setshowLevelUp: (boolean) => void;
+    selectedHome: boolean;
+    selectedAward: boolean;
+    setSelectHome: (boolean) => void;
+    setSelectAward: (boolean) => void;
 }
 
 interface ChallengeType {
@@ -35,6 +39,8 @@ export function ChallengeProvider({ children, ...rest }: ChallengeProviderProps)
     const [challengeCompleted, setChallengeCompleted] = useState(0);
     const [newChallenge, setnewChallenge] = useState(null);
     const [showLevelUp, setshowLevelUp] = useState(false);
+    const [selectedHome, setSelectHome] = useState(true);
+    const [selectedAward, setSelectAward] = useState(false);
 
 
     useEffect(() => {
@@ -76,7 +82,11 @@ export function ChallengeProvider({ children, ...rest }: ChallengeProviderProps)
                 startNewChallenge,
                 newChallenge,
                 resetChallenge,
-                setshowLevelUp
+                setshowLevelUp,
+                selectedAward,
+                selectedHome,
+                setSelectAward,
+                setSelectHome
             }}>
             {children}
 

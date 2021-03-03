@@ -1,0 +1,42 @@
+.container{
+    max-width: 6rem;
+    background: var(--white);
+
+    box-shadow: 0 0 60px rgba(0 , 0,0, 0.05);
+    border-right: 1px solid #efeff5;;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.imgLogo{
+    flex: 1;
+    align-items: center;
+    text-align: center;
+}
+
+.container img{
+    margin-top: 1rem;
+}
+
+.iconHome{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 2rem;
+}
+
+.container i{
+    font-size: 2rem;
+    align-items: center;
+    text-align: center;
+    width: 4.5rem;
+    cursor: pointer;
+}
+
+.selected{
+    border-left: 2px solid var(--text);
+    color: blue;
+}

@@ -2,7 +2,7 @@
   height: 100vh; 
   margin: 0 auto;
   max-width: 792px;
-  padding: 2.5rem 2rem;
+  padding: 0.5rem;
 
   display: flex;
   flex-direction: column;
@@ -12,7 +12,13 @@
   display: grid;
 
   grid-template-columns: repeat(2, 1fr);
-  margin-top: 6.5rem;
+  margin-top: 5.5rem;
+  gap: 1rem; 
+}
+
+.principal{
+  display: grid;
+  grid-template-columns: 0.5fr 5fr;
   gap: 1rem; 
 }
 
