@@ -1,5 +1,3 @@
-
-
 import { useContext } from "react";
 
 import Head from "next/head";
@@ -15,7 +13,7 @@ import { LateralBar } from "../components/LateralBar";
 import { ChallengeContext } from '../contexts/ChallengeContext'
 import { GridLeaderBoard } from "../components/GridLeaderBoard";
 
-export function Principal() {
+export default function Principal() {
 
     const { selectedHome } = useContext(ChallengeContext)
     return (

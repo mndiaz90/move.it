@@ -4,10 +4,12 @@ import 'font-awesome/css/font-awesome.min.css';
 import { GetServerSideProps } from 'next'
 
 import { ChallengeProvider } from "../contexts/ChallengeContext";
-import { Principal } from "../pages/Principal";
+import Principal from "../pages/Principal";
 
 interface HomeProps {
-  level: number
+  level: number,
+  user: string,
+  password: string
 }
 
 
@@ -17,10 +19,8 @@ export default function Home(props: HomeProps) {
     <ChallengeProvider level={props.level}>
       <Principal />
     </ChallengeProvider>
-
   )
 }
-
 
 export const getServerSideProps: GetServerSideProps = async (ctx) => {
   const { level } = ctx.req.cookies

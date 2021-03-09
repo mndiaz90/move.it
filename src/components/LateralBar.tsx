@@ -1,4 +1,5 @@
 import { useContext } from 'react'
+import Link from "next/link";
 import { ChallengeContext } from '../contexts/ChallengeContext'
 import styles from '../styles/components/LateralBar.module.css'
 
@@ -16,6 +17,9 @@ export function LateralBar() {
     }
     return (
         <div className={styles.container}>
+            <Link href="/Login">
+                <i className="fa fa-arrow-left"></i>
+            </Link>
             <div className={styles.imgLogo}>
                 <img src="/favicon.png" alt="logo" />
             </div>

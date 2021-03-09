@@ -1,0 +1,54 @@
+.containerLogin{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+
+    align-items: center;
+    justify-content: center;
+
+    align-items: flex-end;
+    padding: 8rem;
+    /* background: var(--blue); */
+}
+
+.containerLogin img{
+    height: 4rem;
+    margin-bottom: 4rem;
+}
+
+.divGithub{
+   display: flex;
+   height: 3rem;
+   width: 20rem;
+   margin-bottom: 10px;
+}
+
+.containerLogin button{
+    flex:1;
+    height: 4rem;
+    background: var(--blue-dark);
+    border: 0;
+    border-radius: 3px;
+}
+
+.containerLogin input{
+    flex: 4;
+    height: 4rem;
+    background: var(--blue);
+    border: 0;
+    margin-right: 2px;
+    border-radius: 3px;
+    font-size: 1rem;
+    text-indent:20px;
+}
+
+.containerLogin input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: var(--white);
+    opacity: 1; 
+    font-size: 1rem;
+    padding: 5px;
+}
+
+.containerLogin input:focus, .containerLogin button:focus{
+    outline: none;
+}
